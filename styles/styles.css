@@ -14,13 +14,32 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
   color: #000000;
+  background-color: #F2F2F2;
+}
+
+.body-container {
+  background: #FFFFFF;
+  width: 1200px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-index {
@@ -36,6 +55,18 @@ body {
   color: #000000;
 }
 
+.navigation-item-search {
+  background-image: url("../images/search-icon.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.navigation-item-favourites {
+  background-image: url("../images/favorite-heart-icon.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
 .navigation-button {
   font-weight: 700;
   font-size: 16px;
@@ -46,9 +77,9 @@ body {
   text-decoration: none;
 }
 
-.main-logo {
+.hero {
   background-image: url("../images/welcome-background.jpg");
-  background-size: 100% 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -83,11 +114,11 @@ body {
 }
 
 .secondary-background {
-  background-color: #f0f6fa;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .light-background {
-  background-color: #e6f0f6;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .secondary-background .advantages-description {
