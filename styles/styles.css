@@ -101,6 +101,10 @@ body {
   color: #333333;
 }
 
+.advantages-list {
+  list-style-type: none;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -123,6 +127,10 @@ body {
 
 .secondary-background .advantages-description {
   color: #333333;
+}
+
+.benefits-list {
+  list-style-type: none;
 }
 
 .benefits-title {
@@ -183,6 +191,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   background: #82B3D3;
+}
+
+.footer-social-list {
+  list-style-type: none;
 }
 
 .contacts-phone a {
