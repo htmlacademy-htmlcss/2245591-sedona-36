@@ -78,9 +78,9 @@ body {
 }
 
 .hero {
-  background-image: url("../images/welcome-background.jpg");
+  background: url("../images/welcome-divider.svg") no-repeat bottom,
+  url("../images/welcome-background.jpg") no-repeat top;
   background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
 .main-advantages-description,
