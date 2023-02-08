@@ -40,6 +40,7 @@ body {
   background: #FFFFFF;
   width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 
 .main-index {
@@ -103,6 +104,8 @@ body {
 
 .advantages-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
