@@ -27,24 +27,38 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  /* Делаем body flex-контейнером, чтобы растянуть все элементы внутри (а у нас это только div.body-container) по вертикали (свойство align-items: stretch по умолчанию у flex-элементов) */
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+  min-height: 100%;
 }
 
 .body-container {
+  display: flex;
+  flex-direction: column;
   background: #FFFFFF;
   width: 1200px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: auto;
+  margin: 0 auto;
 }
 
 .main-index {
   text-align: center;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .navigation-link {
@@ -80,7 +94,7 @@ body {
 
 .hero {
   background: url("../images/welcome-divider.svg") no-repeat bottom,
-  url("../images/welcome-background.jpg") no-repeat top;
+    url("../images/welcome-background.jpg") no-repeat top;
   background-size: 100% auto;
 }
 
