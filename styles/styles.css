@@ -63,16 +63,13 @@ body {
 
 .main-header {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
-}
-
-.navigation-logo {
-  margin-left: 70px;
+  padding: 0 70px;
 }
 
 .navigation {
-  width: 1060px;
+  width: 920px;
   display: flex;
 }
 
@@ -88,8 +85,9 @@ body {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  width: 312px;
+  width: 320px;
   margin: 0 0 0 auto;
   padding: 0;
   list-style-type: none;
@@ -97,7 +95,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 16px;
+  padding: 22px 12px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -112,7 +110,7 @@ body {
   background-image: url("../images/search-icon.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 16px 20px;
+  background-position: 12px 22px;
 }
 
 .navigation-item-favourites .navigation-link {
@@ -121,7 +119,7 @@ body {
   background-image: url("../images/favorite-heart-icon.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 16px 20px;
+  background-position: 12px 22px;
 }
 
 .navigation-button {
@@ -334,6 +332,7 @@ body {
 
 .main-footer {
   display: flex;
+  align-items: center;
   width: 1200px;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -343,8 +342,8 @@ body {
   display: flex;
   list-style-type: none;
   width: 142px;
-  margin: 0;
-  margin-left: 70px;
+  margin: 0 0 0 70px;
+  padding: 0;
 }
 
 .footer-social-item a {
@@ -370,6 +369,10 @@ body {
   margin: 0 70px 0 auto;
 }
 
+.main-catalog {
+  flex-grow: 1;
+}
+
 .catalog-filter {
   display: flex;
   width: 1200px;
@@ -393,7 +396,7 @@ body {
   margin-right: 0;
 }
 
-.catalog-bitton-container {
+.catalog-button-container {
   width: 191px;
   margin-left: 70px;
 }
@@ -409,6 +412,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .home-icon {
@@ -502,12 +506,18 @@ body {
 }
 
 .pagination-item {
-  width: 60px;
+  max-width: 60px;
   margin-right: 8px;
   background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-item:last-child {
+  margin: 0;
 }
 
 .pagination-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -515,6 +525,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  padding: 12px 24px;
 }
 
 .pagination-current {
@@ -527,4 +538,5 @@ body {
 
 .catalog-subscribe {
   text-align: center;
+  padding: 96px 258px 104px;
 }
