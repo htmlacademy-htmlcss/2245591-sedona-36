@@ -467,9 +467,17 @@ body {
 }
 
 .select-control {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   width: 292px;
   height: 49px;
   margin-right: 70px;
+  padding-left: 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .display-button {
@@ -479,6 +487,11 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
+}
+
+.display-button.button-current {
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .display-button:last-child {
