@@ -68,6 +68,11 @@ body {
   padding: 0 70px;
 }
 
+.main-header-logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .navigation {
   width: 920px;
   display: flex;
