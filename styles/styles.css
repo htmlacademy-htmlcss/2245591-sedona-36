@@ -446,6 +446,11 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-hotels {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
@@ -456,6 +461,12 @@ body {
 
 .hotels-card {
   width: 340px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.hotels-card:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .hotels-card-image {
@@ -477,6 +488,9 @@ body {
 }
 
 .hotels-card-book-button {
+  display: block;
+  box-sizing: border-box;
+  max-width: 140px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -485,10 +499,13 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background: #82B3D3;
+  padding: 8px 20px;
+  border-radius: 4px;
 }
 
 .button.hotels-card-book-button {
   background: #756157;
+  padding: 8px 26px;
 }
 
 .hotel-rating-level {
