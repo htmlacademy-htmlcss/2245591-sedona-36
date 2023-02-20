@@ -416,7 +416,6 @@ body {
 
 .catalog-filter-group:first-child {
   width: 150px;
-  margin-left: 70px;
   margin-right: 0;
 }
 
@@ -435,6 +434,37 @@ body {
 .catalog-button-container {
   width: 191px;
   margin-left: 70px;
+}
+
+.submit-button {
+  box-sizing: border-box;
+  min-width: 191px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 50px;
+  background: #82B3D3;
+  border: none;
+  border-radius: 4px;
+}
+
+.reset-button {
+  box-sizing: border-box;
+  min-width: 191px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 8px 50px;
+  background: none;
+  border: none;
 }
 
 .header-filter-background {
