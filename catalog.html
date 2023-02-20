@@ -51,8 +51,8 @@
           <header class="catalog-header">
             <h1 class="catalog-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link home-icon" href="index.html">
+              <li class="breadcrumbs-item home-icon">
+                <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -116,7 +116,7 @@
                 <legend class="catalog-filter-title">Стоимость</legend>
 
               </fieldset>
-              <div class="catalog-bitton-container">
+              <div class="catalog-button-container">
                 <button class="submit-button" type="submit">Применить</button>
                 <button class="reset-button" type="reset">Сбросить</button>
               </div>
@@ -124,18 +124,18 @@
           </section>
         </div>
         <section class="catalog-sort">
-          <p class="sort-result">найдено гостиниц: </p>
+          <p class="sort-result">найдено гостиниц: <span class="hotels-number">38</span></p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a href="#" class="button button-current">
+          <a href="#" class="display-button small-tiles-button button-current">
             <span class="visually-hidden">Показать мелкой плиткой</span>
           </a>
-          <a href="#" class="button">
+          <a href="#" class="display-button large-tiles-button">
             <span class="visually-hidden">Показать крупной плиткой</span>
           </a>
-          <a href="#" class="button">
+          <a href="#" class="display-button list-button">
             <span class="visually-hidden">Показать списком</span>
           </a>
         </section>
@@ -150,8 +150,10 @@
               </a>
               <span class="hotels-card-booking-type">Гостиница</span>
               <span class="hotels-card-price">От 4000 ₽</span>
+
               <a class="hotels-card-book-button button" href="#">подробнее</a>
               <button class="hotels-card-book-button" type="button">в избранное</button>
+
               <!--При нажатии на кнопку "В избранное" пользователь остается на той же странице,
             но карточка гостиницы попадает в список избранных, а счетчик вверху страницы увеличивается на +1-->
               <div class="rating-icon">
@@ -160,9 +162,7 @@
                 <span class="raiting-icon-star"></span>
                 <span class="raiting-icon-star"></span>
               </div>
-              <div class="hotel-rating">
-                <p class="hotel-rating-level">Рейтинг: 8,5</p>
-              </div>
+              <p class="hotel-rating-level">Рейтинг: 8,5</p>
             </li>
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
@@ -180,9 +180,7 @@
                 <span class="raiting-icon-star"></span>
                 <span class="raiting-icon-star"></span>
               </div>
-              <div class="hotel-rating">
-                <p class="hotel-rating-level">Рейтинг: 9,2</p>
-              </div>
+              <p class="hotel-rating-level">Рейтинг: 9,2</p>
             </li>
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
@@ -199,9 +197,7 @@
                 <span class="raiting-icon-star"></span>
                 <span class="raiting-icon-star"></span>
               </div>
-              <div class="hotel-rating">
-                <p class="hotel-rating-level">Рейтинг: 6,9</p>
-              </div>
+              <p class="hotel-rating-level">Рейтинг: 6,9</p>
             </li>
             <li class="hotels-card">
               <a class="hotels-card-link" href="#">
@@ -217,9 +213,7 @@
                 <span class="raiting-icon-star"></span>
                 <span class="raiting-icon-star"></span>
               </div>
-              <div class="hotel-rating">
-                <p class="hotel-rating-level">Рейтинг: 5,0</p>
-              </div>
+              <p class="hotel-rating-level">Рейтинг: 5,0</p>
             </li>
           </ul>
         </section>
