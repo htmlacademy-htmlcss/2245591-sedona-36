@@ -548,8 +548,9 @@ body {
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
   list-style-type: none;
   width: 1060px;
   margin: 0 auto 0 auto;
@@ -563,8 +564,6 @@ body {
   column-gap: 20px;
   box-sizing: border-box;
   width: 340px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
