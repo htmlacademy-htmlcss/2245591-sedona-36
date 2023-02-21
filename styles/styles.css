@@ -573,10 +573,6 @@ body {
   margin: 0;
 }
 
-.hotels-card:nth-child(3n) {
-  margin-right: 0;
-}
-
 .hotels-card-image {
   max-width: 100%;
   height: auto;
