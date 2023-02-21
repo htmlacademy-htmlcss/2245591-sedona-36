@@ -607,7 +607,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   display: block;
-  width: 140px;
+
   box-sizing: border-box;
   text-align: center;
   background: #82B3D3;
@@ -618,7 +618,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   display: block;
-  width: 140px;
+
   box-sizing: border-box;
   text-align: center;
   padding: 10px 26px;
@@ -633,7 +633,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  width: 140px;
+
   box-sizing: border-box;
   background: #F2F2F2;
   border-radius: 4px;
