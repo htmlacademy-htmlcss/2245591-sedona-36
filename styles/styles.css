@@ -127,16 +127,23 @@ body {
   background-position: 12px 22px;
 }
 
-.navigation-button {
+.button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 36px;
   color: #FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 34px;
+  border: none;
   border-radius: 4px;
+}
+
+.navigation-button {
+  font-size: 16px;
+  line-height: 20px;
   margin-left: 20px;
 }
 
@@ -306,15 +313,7 @@ body {
 }
 
 .booking-button {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #FFFFFF;
-  background-color: #756157;
-  text-transform: uppercase;
-  text-decoration: none;
   padding: 8px 50px;
-  border-radius: 4px;
 }
 
 .subscribe {
@@ -348,16 +347,10 @@ body {
 }
 
 .subscribe-button {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
   background: #82B3D3;
-  border: none;
   padding: 8px 50px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .main-footer {
@@ -382,7 +375,7 @@ body {
   height: 40px;
 }
 
-.footer-social-item a {
+.footer-social-link {
   padding: 11px 14px;
 }
 
@@ -437,34 +430,21 @@ body {
 }
 
 .submit-button {
-  box-sizing: border-box;
-  min-width: 191px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  box-sizing: border-box;
+  min-width: 191px;
   padding: 8px 50px;
   background: #82B3D3;
-  border: none;
-  border-radius: 4px;
 }
 
 .reset-button {
-  box-sizing: border-box;
-  min-width: 191px;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  box-sizing: border-box;
+  min-width: 191px;
   padding: 8px 50px;
   background: none;
-  border: none;
 }
 
 .header-filter-background {
@@ -624,25 +604,23 @@ body {
 }
 
 .hotels-card-book-button {
+  font-size: 16px;
+  line-height: 20px;
   display: block;
   width: 140px;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
   text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #FFFFFF;
   background: #82B3D3;
   padding: 8px 12px;
-  border-radius: 4px;
-  border: none;
 }
 
-.button.hotels-card-book-button {
-  background: #756157;
+.hotels-card-more-button {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  width: 140px;
+  box-sizing: border-box;
+  text-align: center;
   padding: 10px 26px;
 }
 
