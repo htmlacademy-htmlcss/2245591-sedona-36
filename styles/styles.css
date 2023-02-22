@@ -356,9 +356,7 @@ body {
 .main-footer {
   display: flex;
   align-items: center;
-  width: 1200px;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 40px 70px 30px 70px;
 }
 
 .footer-social-list {
@@ -366,7 +364,7 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   width: 142px;
-  margin: 0 0 0 70px;
+  margin: 0;
   padding: 0;
 }
 
@@ -397,7 +395,7 @@ body {
 
 .footer-academy-link {
   width: 115px;
-  margin: 0 70px 0 auto;
+  margin-left: auto;
 }
 
 .htmlacademy-logo {
