@@ -376,7 +376,9 @@ body {
 }
 
 .footer-social-link {
-  padding: 11px 14px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 11px;
 }
 
 .footer-contacts {
@@ -396,6 +398,10 @@ body {
 .footer-academy-link {
   width: 115px;
   margin: 0 70px 0 auto;
+}
+
+.htmlacademy-logo {
+  display: block;
 }
 
 .main-catalog {
