@@ -34,6 +34,7 @@ html {
 body {
   margin: 0;
   display: flex;
+  text-align: center;
   /* Делаем body flex-контейнером, чтобы растянуть все элементы внутри (а у нас это только div.body-container) по вертикали (свойство align-items: stretch по умолчанию у flex-элементов) */
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -53,10 +54,6 @@ body {
   margin: 0 auto;
 }
 
-.main-index {
-  text-align: center;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -69,8 +66,10 @@ body {
 }
 
 .main-header-logo {
-  display: inline-block;
+  position: relative;
   vertical-align: top;
+  margin-bottom: -6px;
+  z-index: 10;
 }
 
 .navigation {
@@ -87,6 +86,11 @@ body {
   list-style-type: none;
 }
 
+.navigation-item {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -100,7 +104,7 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 22px 12px;
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -109,22 +113,29 @@ body {
   color: #000000;
 }
 
+.navigation-link:hover {
+  text-decoration: underline 1px #000000;
+  text-underline-offset: 24px;
+}
+
 .navigation-item-search .navigation-link {
   min-width: 20px;
   min-height: 20px;
+  padding: 22px 12px;
   background-image: url("../images/search-icon.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 12px 22px;
+  background-position: 50% 50%;
 }
 
 .navigation-item-favourites .navigation-link {
   min-width: 20px;
   min-height: 20px;
+  padding: 22px 12px;
   background-image: url("../images/favorite-heart-icon.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 12px 22px;
+  background-position: 50% 50%;
 }
 
 .button {
@@ -147,11 +158,28 @@ body {
   margin-left: 20px;
 }
 
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .hero {
+  position: relative;
+  background-image: url("../images/welcome-background.jpg");
+  background-color: #82B3D3;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 51px;
   padding-bottom: 82px;
-  background: url("../images/welcome-divider.svg") no-repeat bottom center,
-    url("../images/welcome-background.jpg") no-repeat top center;
+}
+
+.hero:after {
+  position: absolute;
+  content: url("../images/welcome-divider.svg");
+  width: 1200px;
+  height: 57px;
+  left: 0;
+  bottom: 0;
 }
 
 .main-advantages-description {
@@ -176,17 +204,17 @@ body {
 
 .main-advantages-introduction {
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
-.invitation-advantages,
-.booking-text {
+.invitation-advantages {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  margin: 0;
 }
 
 .advantages {
@@ -237,14 +265,14 @@ body {
   box-sizing: border-box;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
-  padding: 102px 85px;
+  padding: 112px 85px;
 }
 
 .light-background {
   box-sizing: border-box;
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
-  padding: 102px 85px;
+  padding: 112px 85px;
 }
 
 .secondary-background .advantages-description {
@@ -281,6 +309,7 @@ body {
 
 .benefits-description {
   color: #333333;
+  margin: 0;
 }
 
 .main-benefits-background {
@@ -312,7 +341,16 @@ body {
   padding: 96px 304px;
 }
 
+.booking-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
 .booking-button {
+  display: inline-block;
   padding: 8px 50px;
 }
 
@@ -327,6 +365,8 @@ body {
 .subscribe-text {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-form {
