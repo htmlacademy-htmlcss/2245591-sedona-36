@@ -679,6 +679,22 @@ body {
   color: #FFFFFF;
 }
 
+.breadcrumbs-link:hover, .breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:hover svg path, .breadcrumbs-link:focus svg path {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active svg path {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .home-icon .breadcrumbs-link {
   padding-left: 0;
 }
@@ -980,7 +996,7 @@ body {
   color: #000000;
 }
 
-/* Блок "подписка" */
+/* Блок "подписка" в каталоге */
 
 .catalog-subscribe {
   text-align: center;
