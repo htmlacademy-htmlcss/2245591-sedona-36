@@ -959,6 +959,27 @@ body {
   color: #000000;
 }
 
+.pagination-item:hover, .pagination-item:focus {
+  background: #68A2CA;
+  outline: 1px solid #82B3D3;
+  outline-offset: -1px;
+  border-radius: 4px;
+}
+
+.pagination-item:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-current:hover, .pagination-current:focus, .pagination-current:active {
+  background: #F2F2F2;
+  outline: none;
+}
+
+.pagination-current:hover a, .pagination-current:focus a, .pagination-current:active a {
+  color: #000000;
+}
+
 /* Блок "подписка" */
 
 .catalog-subscribe {
