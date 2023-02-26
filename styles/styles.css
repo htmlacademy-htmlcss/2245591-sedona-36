@@ -70,7 +70,8 @@ body {
   cursor: pointer;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #615048;
 }
 
@@ -278,6 +279,7 @@ body {
 }
 
 .advantages-title {
+  position: relative;
   margin: 0;
   margin-bottom: 62px;
   font-weight: 700;
@@ -292,6 +294,17 @@ body {
 
 .advantages-wrapper {
   padding: 102px 85px;
+}
+
+.advantages-wrapper .advantages-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 86px;
+  left: 50%;
+  margin-left: -30px;
 }
 
 .main-background {
@@ -317,6 +330,18 @@ body {
   width: 400px;
   background-color: rgba(131, 179, 211, 0.2);
   padding: 112px 85px;
+}
+
+.secondary-background .advantages-title::before,
+.light-background .advantages-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 86px;
+  left: 50%;
+  margin-left: -30px;
 }
 
 .secondary-background .advantages-description {
@@ -443,7 +468,8 @@ body {
   border-bottom-left-radius: 0;
 }
 
-.subscribe-button:hover, .subscribe-button:focus {
+.subscribe-button:hover,
+.subscribe-button:focus {
   background: #68A2CA;
 }
 
@@ -558,7 +584,8 @@ body {
   background: #82B3D3;
 }
 
-.submit-button:hover, .submit-button:focus {
+.submit-button:hover,
+.submit-button:focus {
   background: #68A2CA;
 }
 
@@ -689,6 +716,19 @@ body {
   border-radius: 4px;
 }
 
+.display-button:hover {
+  border: 2px solid #000000;
+}
+
+.display-button:focus {
+  border: 2px solid #68A2CA;
+}
+
+.display-button:active {
+  border: 2px solid #000000;
+}
+
+
 .small-tiles-button {
   background-image: url("../images/sort-icons/sort-icon-small-tiles.svg");
 }
@@ -774,7 +814,8 @@ body {
   padding: 8px 12px;
 }
 
-.hotels-card-book-button:hover, .hotels-card-book-button:focus {
+.hotels-card-book-button:hover,
+.hotels-card-book-button:focus {
   background: #68A2CA;
 }
 
@@ -793,7 +834,8 @@ body {
   background: #7DB54F;
 }
 
-.checked-button:hover, .checked-button:focus {
+.checked-button:hover,
+.checked-button:focus {
   background: #6C9E42;
 }
 
