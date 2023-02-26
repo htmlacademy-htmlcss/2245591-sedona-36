@@ -355,21 +355,21 @@ body {
   background-image: url("../images/benefits-icons/benefits-accomodation.svg");
   background-size: 75px 72px;
   background-repeat: no-repeat;
-  background-position: 163.5px 81px;
+  background-position: center 81px;
 }
 
 .food-icon {
   background-image: url("../images/benefits-icons/benefits-food.svg");
   background-size: 75px 72px;
   background-repeat: no-repeat;
-  background-position: 163.5px 82px;
+  background-position: center 81px;
 }
 
 .souvenirs-icon {
   background-image: url("../images/benefits-icons/benefits-souvenirs.svg");
   background-size: 75px 72px;
   background-repeat: no-repeat;
-  background-position: 168.5px 79px;
+  background-position: center 81px;
 }
 
 /* Блок "бронирование" */
