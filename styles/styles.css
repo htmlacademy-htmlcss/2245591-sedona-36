@@ -620,11 +620,26 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
 }
 
 .display-button.button-current {
   border: 2px solid #000000;
   border-radius: 4px;
+}
+
+.small-tiles-button {
+  background-image: url("../images/sort-icons/sort-icon-small-tiles.svg");
+}
+
+.large-tiles-button {
+  background-image: url("../images/sort-icons/sort-icon-big-tiles.svg");
+}
+
+.list-button {
+  background-image: url("../images/sort-icons/sort-icon-by-list.svg");
 }
 
 .display-button:last-child {
