@@ -506,6 +506,14 @@ body {
   padding: 12px 11px;
 }
 
+.footer-social-link:hover svg path, .footer-social-link:focus svg path {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active svg path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-contacts {
   margin-left: 236px;
 }
@@ -519,6 +527,14 @@ body {
   text-transform: uppercase;
 }
 
+.contacts-phone a:hover, .contacts-phone a:focus {
+  color: #756157;
+}
+
+.contacts-phone a:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-academy-link {
   width: 115px;
   margin-left: auto;
@@ -526,6 +542,14 @@ body {
 
 .htmlacademy-logo {
   display: block;
+}
+
+.htmlacademy-logo:hover path, .htmlacademy-logo:focus path {
+  fill: #756157;
+}
+
+.htmlacademy-logo:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Стили страницы каталога */
@@ -636,14 +660,15 @@ body {
   margin: 0 0 8px 0;
 }
 
+/* Хлебные крошки */
+
 .breadcrumbs {
+  position: relative;
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-
-/* Хлебные крошки */
 
 .breadcrumbs-link {
   font-size: 16px;
@@ -656,6 +681,16 @@ body {
 
 .home-icon .breadcrumbs-link {
   padding-left: 0;
+}
+
+.breadcrumbs-item:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  width: 8px;
+  height: 11px;
+  left: 24px;
+  top: 6px;
 }
 
 .catalog-filter-list {
@@ -717,15 +752,15 @@ body {
 }
 
 .display-button:hover {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .display-button:focus {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .display-button:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 
