@@ -52,6 +52,33 @@ body {
   min-height: 100%;
 }
 
+/* Общие стили для кнопок */
+
+.button {
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 34px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* Стили обертки для стики футера */
 
 .body-container {
@@ -163,22 +190,6 @@ body {
   border-radius: 50%;
   top: 11px;
   left: 19px;
-}
-
-.button {
-  display: inline-block;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  color: #FFFFFF;
-  background-color: #756157;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 8px 34px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .navigation-button {
@@ -426,10 +437,19 @@ body {
 }
 
 .subscribe-button {
-  background: #82B3D3;
+  background-color: #82B3D3;
   padding: 8px 50px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.subscribe-button:hover, .subscribe-button:focus {
+  background: #68A2CA;
+}
+
+.subscribe-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Футер */
@@ -512,6 +532,15 @@ body {
   margin-right: 0;
 }
 
+.control {
+  line-height: 23px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-button-container {
   display: flex;
   flex-direction: column;
@@ -529,6 +558,15 @@ body {
   background: #82B3D3;
 }
 
+.submit-button:hover, .submit-button:focus {
+  background: #68A2CA;
+}
+
+.submit-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .reset-button {
   font-size: 16px;
   line-height: 20px;
@@ -538,6 +576,22 @@ body {
   margin-bottom: 0;
   margin-top: 32px;
   background: none;
+}
+
+.reset-button:hover {
+  background: none;
+  opacity: 0.6;
+}
+
+.reset-button:focus {
+  background: none;
+  opacity: 1;
+  border: 3px solid #83B3D3;
+}
+
+.reset-button:active {
+  background: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .header-filter-background {
@@ -720,6 +774,15 @@ body {
   padding: 8px 12px;
 }
 
+.hotels-card-book-button:hover, .hotels-card-book-button:focus {
+  background: #68A2CA;
+}
+
+.hotels-card-book-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotels-card-more-button {
   font-size: 16px;
   line-height: 20px;
@@ -728,6 +791,15 @@ body {
 
 .checked-button {
   background: #7DB54F;
+}
+
+.checked-button:hover, .checked-button:focus {
+  background: #6C9E42;
+}
+
+.checked-button:active {
+  background: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-rating-level {
