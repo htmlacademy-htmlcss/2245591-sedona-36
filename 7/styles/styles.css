@@ -185,7 +185,12 @@ body {
   background-position: 50% 50%;
 }
 
-.navigation-item-search:hover .navigation-link::before {
+.navigation-item-search:hover {
+  transform: scale(1.1);
+}
+
+/* Посмотреть, какой вариант лучше
+  .navigation-item-search:hover .navigation-link::before {
   position: absolute;
   left: 3px;
   right: 3px;
@@ -193,7 +198,7 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
-}
+} */
 
 .navigation-item-favourites .navigation-link {
   position: relative;
@@ -206,7 +211,12 @@ body {
   background-position: 50% 50%;
 }
 
-.navigation-item-favourites:hover .navigation-link::before {
+.navigation-item-favourites:hover {
+  transform: scale(1.1);
+}
+
+/* Посмотреть, какой вариант лучше
+  .navigation-item-favourites:hover .navigation-link::before {
   position: absolute;
   left: 3px;
   right: 3px;
@@ -214,7 +224,7 @@ body {
   height: 2px;
   background-color: #756257;
   content: "";
-}
+} */
 
 .favourites-number {
   position: absolute;
