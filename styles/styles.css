@@ -586,7 +586,7 @@ body {
 .reset-button:focus {
   background: none;
   opacity: 1;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .reset-button:active {
