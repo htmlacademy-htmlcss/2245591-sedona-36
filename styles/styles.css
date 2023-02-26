@@ -568,6 +568,10 @@ body {
   color: #FFFFFF;
 }
 
+.home-icon .breadcrumbs-link {
+  padding-left: 0;
+}
+
 .catalog-filter-list {
   list-style-type: none;
 }
