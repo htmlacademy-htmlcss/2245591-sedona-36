@@ -70,6 +70,11 @@ body {
   cursor: pointer;
 }
 
+.button:disabled {
+  background: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .button:hover,
 .button:focus {
   background-color: #615048;
