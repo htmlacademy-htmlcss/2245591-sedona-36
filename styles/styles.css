@@ -924,6 +924,15 @@ body {
   color: #000000;
 }
 
+.hotels-card-link:hover,
+.hotels-card-link:focus {
+  opacity: 0.8;
+}
+
+.hotels-card-link:active {
+  opacity: 0.5;
+}
+
 .hotels-card-booking-type,
 .hotels-card-price {
   color: #333333;
