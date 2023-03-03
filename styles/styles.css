@@ -627,6 +627,10 @@ body {
   line-height: 24px;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .catalog-filter-group {
   margin: 0;
   padding: 0;
@@ -740,6 +744,82 @@ body {
 
 .control {
   line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control:focus .control-mark {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control:active .control-mark {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url("../images/checkmark.svg");
+  content: "";
+}
+
+.control-mark-radio {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.control:hover .control-mark-radio {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control:focus .control-mark-radio {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.control:active .control-mark-radio {
+  border: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
 
 .catalog-filter-list {
@@ -888,6 +968,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
+  align-self: center;
 }
 
 .select-control {
