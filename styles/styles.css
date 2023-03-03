@@ -621,6 +621,18 @@ body {
   width: 1060px;
 }
 
+.catalog-filter-title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .catalog-filter-group:first-child {
   width: 150px;
   margin-right: 0;
@@ -638,11 +650,100 @@ body {
   margin-right: 0;
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.range-label {
+  display: flex;
+  position: relative;
+}
+
+.range-label span {
+  position: absolute;
+  color: #000000;
+  line-height: 24px;
+  left: 106px;
+  top: 12px;
+}
+
+.range-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  width: 103px;
+  padding: 12px 20px;
+  background: #F2F2F2;
+  border: none;
+}
+
+.range-input-from {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.range-input-to {
+  border-radius: 0 4px 4px 0;
+  margin-right: 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+}
+
+.range-scale::before {
+  content: "";
+  position: absolute;
+  width: 287px;
+  height: 4px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  transform: scale(1.05);
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
 .control {
   line-height: 23px;
 }
 
 .catalog-filter-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -660,7 +761,7 @@ body {
   box-sizing: border-box;
   min-width: 191px;
   padding: 8px 50px;
-  margin-top: auto;
+  margin-top: 56px;
   background: #82B3D3;
 }
 
@@ -722,6 +823,7 @@ body {
   position: relative;
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
 }
@@ -769,16 +871,6 @@ body {
 
 .breadcrumbs-item:last-child::after {
   content: none;
-}
-
-.catalog-filter-list {
-  list-style-type: none;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 /* Сортировка и отображение списка */
