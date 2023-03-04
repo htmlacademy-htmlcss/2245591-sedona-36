@@ -1004,7 +1004,7 @@ body {
 .display-button {
   min-width: 16px;
   min-height: 14px;
-  padding: 15px 14px;
+  padding: 15px 15px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
@@ -1077,6 +1077,9 @@ body {
 }
 
 .hotels-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   margin: 0;
 }
 
@@ -1084,7 +1087,7 @@ body {
   object-fit: contain;
   max-width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .hotels-card-price {
@@ -1136,7 +1139,7 @@ body {
 .hotels-card-more-button {
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 26px;
+  padding: 8px 26px;
 }
 
 .checked-button {
@@ -1161,7 +1164,8 @@ body {
   box-sizing: border-box;
   background: #F2F2F2;
   border-radius: 4px;
-  padding: 9px;
+  padding: 9px 9px 8px;
+  margin: 0;
 }
 
 .rating-icon {
@@ -1179,17 +1183,26 @@ body {
   margin-right: 6px;
 }
 
-.hotel-rating-level {
-  margin: 0;
-}
-
 /* Пагинация */
 
 .pagination-list {
+  position: relative;
   display: flex;
   list-style-type: none;
   margin: 80px auto 0 auto;
+  padding: 0;
   width: 1060px;
+}
+
+.pagination-list::before {
+  position: absolute;
+  content: "";
+  width: 1060px;
+  height: 1px;
+  background: #E6E6E6;
+  top: -40px;
+  left: 50%;
+  margin-left: -530px;
 }
 
 .pagination-item {
