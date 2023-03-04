@@ -670,6 +670,7 @@ body {
   line-height: 24px;
   left: 106px;
   top: 12px;
+  opacity: 0.3;
 }
 
 .range-input {
@@ -763,6 +764,11 @@ body {
 
 .control:hover .control-mark {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  opacity: 0.3;
+}
+
+.control:hover .control-label {
+  opacity: 0.3;
 }
 
 .control:focus .control-mark {
@@ -773,6 +779,19 @@ body {
 .control:active .control-mark {
   border: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
+}
+
+.control:active .control-label {
+  opacity: 0.3;
+}
+
+.control:disabled .control-mark {
+  opacity: 0.1;
+}
+
+.control:disabled .control-label {
+  opacity: 0.1;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -799,6 +818,7 @@ body {
 
 .control:hover .control-mark-radio {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  opacity: 0.3;
 }
 
 .control:focus .control-mark-radio {
@@ -809,6 +829,11 @@ body {
 .control:active .control-mark-radio {
   border: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
+}
+
+.control:disabled .control-mark-radio {
+  opacity: 0.1;
 }
 
 .control-input[type="radio"]:checked + .control-mark-radio::before {
@@ -999,6 +1024,12 @@ body {
 
 .select-control:active {
   border: 2px solid #3F5E72;
+  opacity: 0.3;
+  outline: none;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
