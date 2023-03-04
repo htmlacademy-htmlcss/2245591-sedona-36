@@ -1490,17 +1490,65 @@ body {
   grid-column: 4 / 5;
 }
 
-.children-info {
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.children-info-tooltip {
+  width: 26px;
+  height: 26px;
+  border: none;
+  background-color: #83B3D3;
+  padding: 7px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.children-info-tooltip:hover,
+.children-info-tooltip:focus {
+  background: #68A2CA;
+}
+
+.children-info-tooltip:active svg {
+  opacity: 0.3;
+}
+
+.tooltip-text {
+  display: block;
+  position: absolute;
+  top: 41px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 216px;
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+}
+
+.tooltip-text::before {
   position: absolute;
   content: "";
-  background-color: #83B3D3;
-  background-image: url("../images/info-icon.svg");
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: 118px;
+  background-image: url("../images/tooltip-rec.svg");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 13px;
-  border-radius: 50%;
-  top: 11px;
-  left: 59px;
+  z-index: 1;
+}
+
+.children-info-tooltip:hover + .tooltip-text,
+.children-info-tooltip:focus + .tooltip-text {
+  display: block;
 }
 
 .search-form-button {

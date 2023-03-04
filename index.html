@@ -182,7 +182,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -202,7 +202,16 @@
             </div>
             <div class="children-number-wrapper">
               <label class="guests-number-label" for="children-number">Дети:</label>
-              <span class="children-info"></span>
+              <span class="tooltip">
+                <button class="children-info-tooltip" type="button" aria-labelledby="tooltip-children-number">
+                  <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-children-number">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет.
+                  Дети до 6 лет размещаются бесплатно.</span>
+              </span>
             </div>
             <div class="guests-number-input-wrapper">
               <input class="guests-number-input children-number-input" type="number" id="children-number" value="2">
