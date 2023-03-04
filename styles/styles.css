@@ -1522,3 +1522,7 @@ body {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
+
+.modal-container-close {
+  display: none;
+}
