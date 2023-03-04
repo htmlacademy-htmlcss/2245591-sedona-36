@@ -1367,6 +1367,7 @@ body {
 }
 
 .date-form {
+  position: relative;
   grid-column: 2 / 6;
   padding: 12px 20px;
   background: #F2F2F2;
@@ -1377,20 +1378,33 @@ body {
   line-height: 24px;
   color: #000000;
   margin-bottom: 4px;
+  padding-right: 45px;
+  background-image: url("../images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
 }
 
 .date-form:hover {
   background: #E6E6E6;
+  background-image: url("../images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
 }
 
 .date-form:focus {
   background: #E6E6E6;
   outline: 3px solid #83B3D3;
+  background-image: url("../images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
 }
 
 .date-form:active {
   background: #E6E6E6;
   outline: 2px solid #000000;
+  background-image: url("../images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
 }
 
 .warning {
@@ -1517,7 +1531,7 @@ body {
 }
 
 .tooltip-text {
-  display: block;
+  display: none;
   position: absolute;
   top: 41px;
   left: 50%;
@@ -1530,7 +1544,6 @@ body {
   background: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  display: none;
 }
 
 .tooltip-text::before {
