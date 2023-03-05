@@ -1468,66 +1468,6 @@ body {
   padding-top: 12px;
 }
 
-/* .guests-number-input {
-  position: relative;
-  width: 31px;
-  padding: 14px 40px;
-  background: #F2F2F2;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.guests-number-input:hover {
-  background: #E6E6E6;
-}
-
-.guests-number-input:focus {
-  background: #E6E6E6;
-  outline: 3px solid #83B3D3;
-}
-
-.guests-number-input:active {
-  background: #F2F2F2;
-  outline: 2px solid #000000;
-}
-
-.guests-number-input-wrapper {
-  position: relative;
-  display: flex;
-}
-
-.guests-number-input-wrapper::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 48px;
-  background-image: url("../images/count-minus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.guests-number-input-wrapper::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 48px;
-  background-image: url("../images/count-plus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
-} */
-
 .guests-number-input-wrapper {
   display: flex;
   margin-bottom: 48px;
