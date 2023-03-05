@@ -448,14 +448,14 @@ body {
 
 .food-icon {
   background-image: url("../images/benefits-icons/benefits-food.svg");
-  background-size: 75px 72px;
+  background-size: 74px 70px;
   background-repeat: no-repeat;
   background-position: center 81px;
 }
 
 .souvenirs-icon {
   background-image: url("../images/benefits-icons/benefits-souvenirs.svg");
-  background-size: 75px 72px;
+  background-size: 64px 76px;
   background-repeat: no-repeat;
   background-position: center 81px;
 }
@@ -535,7 +535,7 @@ body {
 .main-footer {
   display: flex;
   align-items: center;
-  padding: 40px 70px 30px 70px;
+  padding: 45px 70px 35px 70px;
 }
 
 .footer-social-list {
@@ -1221,7 +1221,7 @@ body {
   position: relative;
   display: flex;
   list-style-type: none;
-  margin: 80px auto 0 auto;
+  margin: 80px auto 60px auto;
   padding: 0;
   width: 1060px;
 }
