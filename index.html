@@ -196,8 +196,12 @@
             <p class="warning departure-date-warning">На эти даты есть свободные номера. Пока есть.</p>
             <label class="guests-number-label" for="adults-number">Взрослые:</label>
             <input class="guests-number-input adults-number-input" type="number" id="adults-number" value="2">
-            <button class="guests-less-button adults-less-button" type="button"></button>
-            <button class="guests-more-button adults-more-button" type="button"></button>
+            <button class="guests-less-button adults-less-button" type="button">
+              <span class="visually-hidden">Меньше.</span>
+            </button>
+            <button class="guests-more-button adults-more-button" type="button">
+              <span class="visually-hidden">Больше.</span>
+            </button>
             <div class="children-number-wrapper">
               <label class="guests-number-label" for="children-number">Дети:</label>
               <span class="tooltip">
@@ -213,13 +217,16 @@
               </span>
             </div>
             <input class="guests-number-input children-number-input" type="number" id="children-number" value="2">
-            <button class="guests-less-button children-less-button" type="button"></button>
-            <button class="guests-more-button children-more-button" type="button"></button>
+            <button class="guests-less-button children-less-button" type="button">
+              <span class="visually-hidden">Меньше.</span>
+            </button>
+            <button class="guests-more-button children-more-button" type="button">
+              <span class="visually-hidden">Больше.</span>
+            </button>
             <a class="button search-form-button" href="#">Найти</a>
           </form>
         </section>
       </div>
     </div>
   </body>
-
 </html>
