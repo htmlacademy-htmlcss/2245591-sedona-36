@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.svg">
   </head>
 
   <body>
@@ -52,8 +53,8 @@
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
                   <!-- Добавляем иконку в разметку, т.к. необходимо менять состояние иконки при взаимодействии -->
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13"  viewbox="0 0 13 13"
-                    fill="none">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                    viewbox="0 0 13 13" fill="none">
                     <path fill="currentColor" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                     <path fill="currentColor" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                   </svg>
@@ -98,7 +99,8 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="Booking-type" value="Hotel" checked>
+                      <input class="visually-hidden control-input" type="radio" name="Booking-type" value="Hotel"
+                        checked>
                       <span class="control-mark-radio"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
@@ -158,15 +160,16 @@
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a class="display-button small-tiles-button button-current" href="#">
-            <span class="visually-hidden">Показать мелкой плиткой</span>
-          </a>
-          <a class="display-button large-tiles-button" href="#">
-            <span class="visually-hidden">Показать крупной плиткой</span>
-          </a>
-          <a class="display-button list-button" href="#">
-            <span class="visually-hidden">Показать списком</span>
-          </a>
+          <div class="display-button-wrapper"><a class="display-button small-tiles-button button-current" href="#">
+              <span class="visually-hidden">Показать мелкой плиткой</span>
+            </a>
+            <a class="display-button large-tiles-button" href="#">
+              <span class="visually-hidden">Показать крупной плиткой</span>
+            </a>
+            <a class="display-button list-button" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </div>
         </section>
         <section class="catalog-hotels" data-test="catalog">
           <h2 class="visually-hidden">Карточки гостиниц</h2>
@@ -333,4 +336,5 @@
       </footer>
     </div>
   </body>
+
 </html>

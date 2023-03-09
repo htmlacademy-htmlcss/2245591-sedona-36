@@ -53,13 +53,14 @@ body {
   display: flex;
   margin: 0;
   min-height: 100%;
+  min-width: 1280px;
   /* Делаем body flex-контейнером, чтобы растянуть все элементы внутри (а у нас это только div.body-container) по вертикали (свойство align-items: stretch по умолчанию у flex-элементов) */
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 /* Общие стили для кнопок */
@@ -70,7 +71,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
@@ -105,7 +106,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 1200px;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -135,6 +136,12 @@ body {
   vertical-align: top;
   margin-bottom: -6px;
   z-index: 1;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus,
+.main-header-logo:active {
+  opacity: 0.6;
 }
 
 .navigation {
@@ -320,8 +327,7 @@ body {
 /* Блок преимуществ */
 
 .main-advantages-description {
-  margin-top: 0;
-  margin-bottom: 25px;
+  margin: 0 250px 25px 250px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -340,8 +346,7 @@ body {
 }
 
 .main-advantages-introduction {
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin: 0 250px 90px 250px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -760,6 +765,20 @@ body {
   border: none;
 }
 
+.range-input:hover {
+  background: #E6E6E6;
+}
+
+.range-input:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.range-input:active {
+  background: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
 .range-input-from {
   border-radius: 4px 0 0 4px;
   margin-right: 2px;
@@ -775,6 +794,15 @@ body {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
+}
+
+/* Убираем стрелочки у инпута в firefox */
+
+.range-input,
+.range-input:hover,
+.range-input:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .range-scale {
@@ -1005,6 +1033,7 @@ body {
 
 .header-filter-background {
   color: #FFFFFF;
+  background-color: rgba(131, 179, 211, 0.2);
   background-image: url("../images/filters-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1025,6 +1054,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -1062,13 +1092,17 @@ body {
   padding-left: 0;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
 .breadcrumbs-item::after {
   position: absolute;
   content: "";
   background-image: url("../images/breadcrumbs-arrow.svg");
   width: 8px;
   height: 11px;
-  margin-left: -7px;
+  right: 0;
   top: 6px;
 }
 
@@ -1082,6 +1116,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 1060px;
   margin: 50px auto 0 auto;
 }
@@ -1135,6 +1171,13 @@ body {
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   outline: none;
+}
+
+.display-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 200px;
 }
 
 .display-button {
@@ -1341,8 +1384,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  margin: 80px auto 60px auto;
+  margin: 80px auto 55px auto;
   padding: 0;
   width: 1060px;
 }
@@ -1359,14 +1403,15 @@ body {
 }
 
 .pagination-item {
-  max-width: 60px;
+  min-width: 60px;
   margin-right: 8px;
+  margin-bottom: 5px;
   background: #82B3D3;
   border-radius: 4px;
 }
 
 .pagination-item:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
 .pagination-link {
@@ -1897,6 +1942,15 @@ body {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
+}
+
+/* Убираем стрелочки у инпута в firefox */
+
+.guests-number-input,
+.guests-number-input:hover,
+.guests-number-input:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .tooltip {
