@@ -328,7 +328,7 @@ img {
 }
 
 .advantages-item {
-  min-height: 384px;
+  min-height: 385px;
 }
 
 .advantages-title {
@@ -503,6 +503,8 @@ img {
 }
 
 .subscribe-input {
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;

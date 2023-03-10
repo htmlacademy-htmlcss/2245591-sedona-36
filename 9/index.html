@@ -186,13 +186,13 @@
           <h2 class="modal-search-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="date-label" for="arrive-date">Дата заезда</label>
-            <input class="date-form" type="text" id="arrive-date" value="27 апреля 2020" placeholder="Укажите дату">
+            <input class="date-form" type="text" id="arrive-date" name="arrive-date" value="27 апреля 2020" placeholder="Укажите дату">
             <p class="warning arrive-date-warning">Мы не можем отправить вас в прошлое.</p>
             <label class="date-label" for="departure-date">Дата выезда</label>
-            <input class="date-form" type="text" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+            <input class="date-form" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
             <p class="warning departure-date-warning">На эти даты есть свободные номера. Пока есть.</p>
             <label class="guests-number-label" for="adults-number">Взрослые:</label>
-            <input class="guests-number-input adults-number-input" type="number" id="adults-number" value="2" placeholder="0">
+            <input class="guests-number-input adults-number-input" type="number" id="adults-number" name="adults-number" value="2" placeholder="0">
             <button class="guests-less-button adults-less-button" type="button">
               <span class="visually-hidden">Меньше.</span>
             </button>
@@ -213,14 +213,14 @@
                   Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </div>
-            <input class="guests-number-input children-number-input" type="number" id="children-number" value="2" placeholder="0">
+            <input class="guests-number-input children-number-input" type="number" id="children-number" name="children-number" value="2" placeholder="0">
             <button class="guests-less-button children-less-button" type="button">
               <span class="visually-hidden">Меньше.</span>
             </button>
             <button class="guests-more-button children-more-button" type="button">
               <span class="visually-hidden">Больше.</span>
             </button>
-            <a class="button search-form-button" href="#">Найти</a>
+            <button class="button search-form-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
