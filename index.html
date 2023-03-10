@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.svg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="body-container">
@@ -117,8 +118,8 @@
           <p class="subscribe-lead">Подпишитесь на рассылку</p>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail">
-            <button class="button subscribe-button">Подписаться</button>
+            <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail">
+            <button class="button subscribe-button" type="button">Подписаться</button>
           </form>
         </section>
       </main>
@@ -177,7 +178,7 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-search-content">
@@ -190,7 +191,7 @@
             <input class="date-form" type="text" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
             <p class="warning departure-date-warning">На эти даты есть свободные номера. Пока есть.</p>
             <label class="guests-number-label" for="adults-number">Взрослые:</label>
-            <input class="guests-number-input adults-number-input" type="number" id="adults-number" value="2">
+            <input class="guests-number-input adults-number-input" type="number" id="adults-number" value="2" placeholder="0">
             <button class="guests-less-button adults-less-button" type="button">
               <span class="visually-hidden">Меньше.</span>
             </button>
@@ -211,7 +212,7 @@
                   Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </div>
-            <input class="guests-number-input children-number-input" type="number" id="children-number" value="2">
+            <input class="guests-number-input children-number-input" type="number" id="children-number" value="2" placeholder="0">
             <button class="guests-less-button children-less-button" type="button">
               <span class="visually-hidden">Меньше.</span>
             </button>
