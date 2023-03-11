@@ -84,11 +84,6 @@ img {
   cursor: pointer;
 }
 
-.button:disabled {
-  background: #e5e5e5;
-  color: #ffffff;
-}
-
 .button:hover,
 .button:focus {
   background-color: #615048;
@@ -97,6 +92,16 @@ img {
 .button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
+
+.button:disabled:hover {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 /* стили обертки для стики футера */
@@ -530,6 +535,15 @@ img {
   outline: 2px solid #000000;
 }
 
+.subscribe-input:disabled {
+  opacity: 0.3;
+}
+
+.subscribe-input:disabled:hover {
+  background: #f2f2f2;
+  opacity: 0.3;
+}
+
 .subscribe-button {
   background-color: #82b3d3;
   padding: 8px 50px;
@@ -546,6 +560,8 @@ img {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
+
+
 
 /* футер */
 
@@ -712,6 +728,15 @@ img {
 
 .range-input:focus:not(:placeholder-shown) {
   outline: 2px solid #000000;
+}
+
+.range-input:disabled {
+  opacity: 0.3;
+}
+
+.range-input:disabled:hover {
+  background: #f2f2f2;
+  opacity: 0.3;
 }
 
 .range-input-from {
@@ -1654,6 +1679,18 @@ img {
   background-position: right 22px center;
 }
 
+.date-form:disabled {
+  opacity: 0.3;
+}
+
+.date-form:disabled:hover {
+  background: #f2f2f2;
+  opacity: 0.3;
+  background-image: url("../images/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
+}
+
 .warning {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
@@ -1719,8 +1756,17 @@ img {
 }
 
 .guests-number-input:focus:not(:placeholder-shown) {
-  background: ##f2f2f2;
+  background: #f2f2f2;
   outline: 3px solid #000000;
+}
+
+.guests-number-input:disabled {
+  opacity: 0.3;
+}
+
+.guests-number-input:disabled:hover {
+  background: #f2f2f2;
+  opacity: 0.3;
 }
 
 .guests-number-input::-webkit-outer-spin-button,
