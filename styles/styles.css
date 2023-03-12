@@ -8,7 +8,7 @@
 /* подключаем шрифты */
 
 @font-face {
-  font-family: "pt sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: "pt sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -53,7 +53,7 @@ body {
   min-height: 100%;
   min-width: 1280px;
   /* делаем body flex-контейнером, чтобы растянуть все элементы внутри (а у нас это только div.body-container) по вертикали (свойство align-items: stretch по умолчанию у flex-элементов) */
-  font-family: "pt sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -63,14 +63,14 @@ body {
 
 img {
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* общие стили для кнопок */
 
 .button {
   display: inline-block;
-  font-family: "pt sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -181,7 +181,7 @@ img {
 .navigation-link {
   display: block;
   padding: 20px 16px;
-  font-family: "pt sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -241,7 +241,7 @@ img {
 
 .favourites-number {
   position: absolute;
-  font-family: "pt sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -1071,7 +1071,7 @@ img {
 }
 
 .select-control {
-  font-family: "pt sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1476,156 +1476,6 @@ img {
   display: grid;
   grid-template-columns: 137px 110px 88px 131px 111px;
   grid-template-rows: auto auto auto auto auto auto;
-}
-
-.search-form > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.search-form > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.search-form > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.search-form > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-}
-
-.search-form > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.search-form > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.search-form > *:nth-child(7) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.search-form > *:nth-child(8) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-
-.search-form > *:nth-child(9) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-}
-
-.search-form > *:nth-child(10) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
-}
-
-.search-form > *:nth-child(11) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.search-form > *:nth-child(12) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-}
-
-.search-form > *:nth-child(13) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.search-form > *:nth-child(14) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-}
-
-.search-form > *:nth-child(15) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
-.search-form > *:nth-child(16) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-}
-
-.search-form > *:nth-child(17) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-}
-
-.search-form > *:nth-child(18) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 3;
-}
-
-.search-form > *:nth-child(19) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
-}
-
-.search-form > *:nth-child(20) {
-  -ms-grid-row: 4;
-  -ms-grid-column: 5;
-}
-
-.search-form > *:nth-child(21) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}
-
-.search-form > *:nth-child(22) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-}
-
-.search-form > *:nth-child(23) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-}
-
-.search-form > *:nth-child(24) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 4;
-}
-
-.search-form > *:nth-child(25) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
-}
-
-.search-form > *:nth-child(26) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-}
-
-.search-form > *:nth-child(27) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-}
-
-.search-form > *:nth-child(28) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 3;
-}
-
-.search-form > *:nth-child(29) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 4;
-}
-
-.search-form > *:nth-child(30) {
-  -ms-grid-row: 6;
-  -ms-grid-column: 5;
 }
 
 .date-label {
