@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -28,19 +30,13 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-item-search">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item-favourites">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
-                <span class="favourites-number">
-                  12
-                </span>
+                <span class="visually-hidden">Избранное</span>
+                <span class="favourites-number">12</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -58,17 +54,15 @@
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
                   <!-- Добавляем иконку в разметку, т.к. необходимо менять состояние иконки при взаимодействии -->
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13"  viewbox="0 0 13 13"
-                    fill="none">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                    viewbox="0 0 13 13" fill="none">
                     <path fill="currentColor" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                     <path fill="currentColor" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                   </svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">
-                  Гостиницы
-                </a>
+                <a class="breadcrumbs-link" href="#">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -106,7 +100,8 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="Booking-type" value="Hotel" checked>
+                      <input class="visually-hidden control-input" type="radio" name="Booking-type" value="Hotel"
+                        checked>
                       <span class="control-mark-radio"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
@@ -132,20 +127,20 @@
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="range-label">
-                      <input class="range-input range-input-from" type="number" value="0" name="min-price">
+                      <input class="range-input range-input-from" type="number" value="0" name="min-price" placeholder="0">
                       <span>от</span>
                     </label>
                     <label class="range-label">
-                      <input class="range-input range-input-to" type="number" value="9000" name="max-price">
+                      <input class="range-input range-input-to" type="number" value="9000" name="max-price" placeholder="0">
                       <span>до</span>
                     </label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -166,15 +161,17 @@
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <a href="#" class="display-button small-tiles-button button-current">
-            <span class="visually-hidden">Показать мелкой плиткой</span>
-          </a>
-          <a href="#" class="display-button large-tiles-button">
-            <span class="visually-hidden">Показать крупной плиткой</span>
-          </a>
-          <a href="#" class="display-button list-button">
-            <span class="visually-hidden">Показать списком</span>
-          </a>
+          <div class="display-button-wrapper">
+            <button class="display-button small-tiles-button button-current" href="#">
+              <span class="visually-hidden">Показать мелкой плиткой</span>
+            </button>
+            <button class="display-button large-tiles-button" href="#">
+              <span class="visually-hidden">Показать крупной плиткой</span>
+            </button>
+            <button class="display-button list-button" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </button>
+          </div>
         </section>
         <section class="catalog-hotels" data-test="catalog">
           <h2 class="visually-hidden">Карточки гостиниц</h2>
@@ -187,10 +184,8 @@
               </a>
               <span class="hotels-card-booking-type">Гостиница</span>
               <span class="hotels-card-price">От 4000 ₽</span>
-
               <a class="button hotels-card-more-button" href="#">подробнее</a>
               <button class="button hotels-card-book-button" type="button">в избранное</button>
-
               <!--При нажатии на кнопку "В избранное" пользователь остается на той же странице,
             но карточка гостиницы попадает в список избранных, а счетчик вверху страницы увеличивается на +1-->
               <div class="rating-icon">
@@ -284,8 +279,8 @@
           <p class="subscribe-lead">Подпишитесь на рассылку</p>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail">
-            <button class="button subscribe-button">Подписаться</button>
+            <input class="subscribe-input" type="email" name="email" placeholder="Ваш e-mail">
+            <button class="button subscribe-button" type="button">Подписаться</button>
           </form>
         </section>
       </main>
@@ -343,4 +338,5 @@
       </footer>
     </div>
   </body>
+
 </html>
